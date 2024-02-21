@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "6a40",
+      "username": "Ayelen",
+      "email": "amor@hotmail.com",
+      "password": "cito"
+    },
+    {
+      "id": "a0ac",
+      "username": "AlexEcheverria",
+      "email": "aleex.naahuel@outlook.com",
+      "password": "Echeverria1998"
+    },
+    {
+      "id": "e40c",
+      "username": "peladito",
+      "email": "pela@hotmail.com",
+      "password": "pelado"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "7a09",
+      "title": "Escaparme con Ayelen",
+      "description": "Darle muchos besos, abrazarla mucho y festejar de que va a estudiar enfermeria 💪🚀🎉🎊",
+      "idUser": "a0ac"
+    },
+    {
+      "id": "e419",
+      "title": "Estudiar",
+      "description": "Estudiar y practicar Angular para rendir el final y recibirme 💪🚀",
+      "idUser": "a0ac"
+    },
+    {
+      "id": "91af",
+      "title": "Practica",
+      "description": "Crear mas proyectos con Angular",
+      "idUser": "a0ac"
+    }
+  ]
+}

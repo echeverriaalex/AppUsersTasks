@@ -1,0 +1,52 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID task</th>
+            <th scope="col">ID user</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let task of taskList">
+        <tr>
+            <th scope="row"> {{ task.id }} </th>
+            <td> {{ task.idUser }}</td>
+            <td> {{ task.title }}</td>
+            <td> {{ task.description }}</td>
+            <td> <button (click)="deleteTask( task.id! )">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- 
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+-->
