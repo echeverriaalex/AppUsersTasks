@@ -17,6 +17,12 @@
       "username": "peladito",
       "email": "pela@hotmail.com",
       "password": "pelado"
+    },
+    {
+      "id": "acb5",
+      "username": "CelinaLencinas",
+      "email": "celi@len.com",
+      "password": "lencinas"
     }
   ],
   "tasks": [

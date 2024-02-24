@@ -1,0 +1,14 @@
+.img-welcome{
+    width: 30vw;
+}
+
+.my-container{
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    background: red;
+}
+
+.app-register{
+    width: 100%;
+}

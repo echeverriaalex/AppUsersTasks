@@ -1,19 +1,31 @@
-<form (ngSubmit)="registerUser()" [formGroup]="register">
-    <div class="mb-3">
-        <label for="username" class="form-label">UserName</label>
-        <input type="text" class="form-control" id="username" formControlName="username">
+<div class="container my-container">
+    <div class="row">
+        <div class="col-12 col-md-4 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <form class="mx-auto" (ngSubmit)="registerUser()" [formGroup]="register">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">UserName</label>
+                            <input type="text" class="form-control" id="username" formControlName="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" formControlName="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" formControlName="password">
+                            <button class="btn btn-warning" type="button" (click)="showPassword()"> Mostrar </button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="repeatPassword" class="form-label">Repeat Password</label>
+                            <input type="password" class="form-control" id="repeatPassword"
+                                formControlName="repeatPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register now!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" formControlName="email">
-    </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" formControlName="password">
-    </div>
-    <div class="mb-3">
-        <label for="repeatPassword" class="form-label">Repeat Password</label>
-        <input type="password" class="form-control" id="repeatPassword" formControlName="repeatPassword">
-    </div>
-    <button type="submit" class="btn btn-primary">Register now!</button>
-</form>
+</div>

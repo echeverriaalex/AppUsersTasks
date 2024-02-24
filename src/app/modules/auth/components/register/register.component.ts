@@ -18,6 +18,16 @@ export class RegisterComponent {
 
   constructor(private userService: UsersService, private fb: FormBuilder){}
 
+  showPassword(){
+    let password = document.getElementById('password')
+    password?.setAttribute("type", "text");
+
+    if(password)
+
+
+    console.log(password)
+  }
+
   registerUser(){
 
     if(this.register.invalid) return

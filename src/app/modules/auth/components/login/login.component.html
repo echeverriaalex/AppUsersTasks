@@ -1,11 +1,17 @@
-<form (ngSubmit)="startSession()" [formGroup]="login">
-    <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" formControlName="email">
+<div class="container my-container">
+    <div class="constainer-sm">
+        <div class="container">
+            <form (ngSubmit)="startSession()" [formGroup]="login">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" formControlName="email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" formControlName="password">
+                </div>
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </form>
+        </div>
     </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" formControlName="password">
-    </div>
-    <button type="submit" class="btn btn-primary">Log In</button>
-</form>
+</div>

@@ -15,18 +15,7 @@ export class ListTaskComponent implements OnInit{
   constructor(private taskService: TasksService, private apiService: ApiService){}
 
   ngOnInit(): void {
-    
-    
     this.getTaskListByUser()
-
-
-    /*
-    this.apiService.getTasksByUser(sessionStorage.getItem('User')!.toString()).subscribe({
-      next: (list) => this.taskList,
-      error: (error) => console.log(error);
-      
-    })
-    */
   }
 
   getTaskListByUser(){
@@ -40,7 +29,6 @@ export class ListTaskComponent implements OnInit{
         
       })
   }
-
 
   deleteTask(idTask: string){    
     this.taskService.deleteTask(idTask)
