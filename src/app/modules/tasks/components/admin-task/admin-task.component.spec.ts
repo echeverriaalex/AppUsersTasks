@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainPageComponent } from './main-page.component';
+import { AdminTaskComponent } from './admin-task.component';
 
-describe('MainPageComponent', () => {
-  let component: MainPageComponent;
-  let fixture: ComponentFixture<MainPageComponent>;
+describe('AdminTaskComponent', () => {
+  let component: AdminTaskComponent;
+  let fixture: ComponentFixture<AdminTaskComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MainPageComponent]
+      declarations: [AdminTaskComponent]
     });
-    fixture = TestBed.createComponent(MainPageComponent);
+    fixture = TestBed.createComponent(AdminTaskComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

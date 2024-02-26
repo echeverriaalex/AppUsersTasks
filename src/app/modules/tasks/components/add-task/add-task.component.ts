@@ -38,6 +38,8 @@ export class AddTaskComponent implements OnInit{
         console.log("Error to create task");        
         console.log(error)
       })
+
+    this.task.reset();
   }
 
 }

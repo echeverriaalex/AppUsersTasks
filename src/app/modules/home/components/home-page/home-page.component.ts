@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
 
+  username = sessionStorage.getItem('username');
+
+  user = sessionStorage.getItem('userComplete');
+
 }

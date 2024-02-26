@@ -1,24 +1,26 @@
-<table class="table">
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <table class="table">
     <thead>
-        <tr>
-            <th scope="col">ID task</th>
-            <th scope="col">ID user</th>
-            <th scope="col">Title</th>
-            <th scope="col">Description</th>
-            <th scope="col">Delete</th>
-        </tr>
+      <tr>
+        <th scope="col">ID task</th>
+        <th scope="col">ID user</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Delete</th>
+      </tr>
     </thead>
     <tbody *ngFor="let task of taskList">
-        <tr>
-            <th scope="row"> {{ task.id }} </th>
-            <td> {{ task.idUser }}</td>
-            <td> {{ task.title }}</td>
-            <td> {{ task.description }}</td>
-            <td> <button (click)="deleteTask( task.id! )">Delete</button></td>
-        </tr>
+      <tr>
+        <th scope="row"> {{ task.id }} </th>
+        <td> {{ task.idUser }}</td>
+        <td> {{ task.title }}</td>
+        <td> {{ task.description }}</td>
+        <td> <button class="btn btn-danger" (click)="deleteTask( task.id! )">Delete</button></td>
+      </tr>
     </tbody>
-</table>
-
+  </table>
+</div>
 <!-- 
 <table class="table">
     <thead>

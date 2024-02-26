@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Error404Component } from './components/error404/error404.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,11 +12,13 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     NavBarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     Error404Component,
-    NavBarComponent
+    NavBarComponent,
+    
   ]
 })
 export class SharedModule { }

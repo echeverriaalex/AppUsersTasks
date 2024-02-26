@@ -47,7 +47,8 @@ export class LoginComponent {
         console.log(res);
         console.log("Welcome you started session succesfull");
         sessionStorage.setItem('User', res[0].id!.toString());
-        this.router.navigate(['main']);
+        sessionStorage.setItem('username', res[0].username!);
+        this.router.navigate(['home']);
       })
       .catch((error)=>{
         console.error(error);        

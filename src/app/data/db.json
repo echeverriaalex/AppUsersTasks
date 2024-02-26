@@ -27,12 +27,6 @@
   ],
   "tasks": [
     {
-      "id": "7a09",
-      "title": "Escaparme con Ayelen",
-      "description": "Darle muchos besos, abrazarla mucho y festejar de que va a estudiar enfermeria 💪🚀🎉🎊",
-      "idUser": "a0ac"
-    },
-    {
       "id": "e419",
       "title": "Estudiar",
       "description": "Estudiar y practicar Angular para rendir el final y recibirme 💪🚀",
@@ -42,6 +36,12 @@
       "id": "91af",
       "title": "Practica",
       "description": "Crear mas proyectos con Angular",
+      "idUser": "a0ac"
+    },
+    {
+      "id": "4c18",
+      "title": "cook",
+      "description": "cook ass\n",
       "idUser": "a0ac"
     }
   ]
